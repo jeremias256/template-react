@@ -108,7 +108,7 @@
   --tw-contain-style:  ;
 }
 
-/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -562,6 +562,10 @@ video {
   height: 100vh;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -573,6 +577,22 @@ video {
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity, 1));
+}
+
+.font-figtree {
+  font-family: Figtree, sans-serif;
+}
+
+.font-inter {
+  font-family: Inter, sans-serif;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.font-nunito {
+  font-family: Nunito, sans-serif;
 }
 
 .text-3xl {
