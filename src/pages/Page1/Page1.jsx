@@ -5,7 +5,9 @@ import { decrement, increment, incrementByAmount } from 'store';
 import { getPokemons } from 'store';
 
 export const Page1 = () => {
-	const { pokemons, isLoadingPokemon } = useSelector(state => state.pokemon);
+	const { pokemons, page, isLoadingPokemon } = useSelector(
+		state => state.pokemon,
+	);
 	const { counter } = useSelector(state => state.counter);
 	const dispatch = useDispatch();
 
@@ -86,8 +88,8 @@ export const Page1 = () => {
 
 				<button
 					className='text-3xl font-bold text-white border-2 rounded-md p-2 border-white'
-					onClick={() => dispatch(getPokemons())}>
-					Get Pokemons
+					onClick={() => dispatch(getPokemons(page))}>
+					Get 10 Pokemons
 				</button>
 			</div>
 		</div>
